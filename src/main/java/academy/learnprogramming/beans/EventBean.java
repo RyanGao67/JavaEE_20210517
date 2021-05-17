@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.CompletionStage;
 
+// @web is the same as @Stereotype @RequestScoped
 @Web
 public class EventBean {
 
@@ -55,3 +56,5 @@ public class EventBean {
         this.user = user;
     }
 }
+
+

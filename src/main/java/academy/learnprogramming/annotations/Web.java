@@ -15,3 +15,4 @@ import javax.inject.Named;
 @Target(ElementType.TYPE)
 public @interface Web {
 }
+
