@@ -1,12 +1,9 @@
 package academy.learnprogramming.producers;
-
 import javax.enterprise.inject.Disposes;
 import javax.enterprise.inject.Produces;
 import java.util.ArrayList;
 import java.util.List;
-
 public class LuckyDishProducer {
-
     /**
      * Producer methods are very useful for when the concrete type to to be
      * injected varies at runtime. This provides polymorphic injection at
@@ -20,9 +17,7 @@ public class LuckyDishProducer {
      */
     @Produces
     public List<String> getLuckyDish() {
-
         List<String> dishes = new ArrayList<>();
-
         dishes.add("Ampesi");
         dishes.add("Tuo Zaafi");
         dishes.add("Banku");
@@ -33,9 +28,7 @@ public class LuckyDishProducer {
         dishes.add("Fante Fante");
         dishes.add("Mpotompoto");
         return dishes;
-
     }
-
     public void dispose(@Disposes List<String> dishes) {
         dishes = null;
     }

@@ -1,5 +1,4 @@
 package academy.learnprogramming.beans;
-
 import academy.learnprogramming.annotations.Web;
 import academy.learnprogramming.scopes.ApplicationScope;
 import academy.learnprogramming.scopes.DependentScope;
